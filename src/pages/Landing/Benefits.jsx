@@ -11,53 +11,56 @@ import GroupIcon from '@material-ui/icons/Group'
 import Title from '../../components/Title'
 import TextColor from '../../components/TextColor'
 
-const Benefits = ({ theme }) => {
-  const benefits = [
-    {
-      heading: 'Servicios especializados',
-      body:
-        'Lorem ipsum dolor sit amet, dolor elit, sed eiusmod tempor init sit.',
-      icon: <CloudDoneIcon fontSize="large" color="primary" />
-    },
-    {
-      heading: 'Desarrollo de estrategias',
-      body:
-        'Lorem ipsum dolor sit amet, dolor elit, sed eiusmod tempor init sit.',
-      icon: <WbIncandescentIcon fontSize="large" color="primary" />
-    },
-    {
-      heading: 'Facturación',
-      body:
-        'Lorem ipsum dolor sit amet, dolor elit, sed eiusmod tempor init sit.',
-      icon: <MonetizationOnIcon fontSize="large" color="primary" />
-    },
-    {
-      heading: 'Equipo Dedicado',
-      body:
-        'Lorem ipsum dolor sit amet, dolor elit, sed eiusmod tempor init sit.',
-      icon: <GroupIcon fontSize="large" color="primary" />
-    }
-  ]
-  return (
-    <Container component="section">
-      <Title variant="h3" align="center">
-        Nuestros <TextColor color="secondary">Beneficios</TextColor>
-      </Title>
-      {benefits.map(benefit => (
-        <Card>
-          <CardContent>
-            <Box display="flex">
-              {benefit.icon}
-              <Box ml={2}>
-                <Typography variant="h5">{benefit.heading}</Typography>
-                <Typography variant="body2">{benefit.body}</Typography>
-              </Box>
-            </Box>
-          </CardContent>
-        </Card>
-      ))}
-    </Container>
-  )
-}
+const Benefits = () => (
+  <Container component="section">
+    <Title variant="h3" align="center">
+      Nuestros <TextColor color="secondary">Beneficios</TextColor>
+    </Title>
+    <Card>
+      <CardContent>
+        <Box display="flex">
+          <CloudDoneIcon fontSize="large" color="primary" />
+          <Box ml={2}>
+            <Typography variant="h5">Servicios especializados</Typography>
+            <Typography variant="body2"></Typography>
+          </Box>
+        </Box>
+      </CardContent>
+    </Card>
+    <Card>
+      <CardContent>
+        <Box display="flex">
+          <WbIncandescentIcon fontSize="large" color="primary" />
+          <Box ml={2}>
+            <Typography variant="h5">Desarrollo de estrategias</Typography>
+            <Typography variant="body2"></Typography>
+          </Box>
+        </Box>
+      </CardContent>
+    </Card>
+    <Card>
+      <CardContent>
+        <Box display="flex">
+          <MonetizationOnIcon fontSize="large" color="primary" />
+          <Box ml={2}>
+            <Typography variant="h5">Facturación</Typography>
+            <Typography variant="body2"></Typography>
+          </Box>
+        </Box>
+      </CardContent>
+    </Card>
+    <Card>
+      <CardContent>
+        <Box display="flex">
+          <GroupIcon fontSize="large" color="primary" />
+          <Box ml={2}>
+            <Typography variant="h5">Equipo dedicado</Typography>
+            <Typography variant="body2"></Typography>
+          </Box>
+        </Box>
+      </CardContent>
+    </Card>
+  </Container>
+)
 
 export default Benefits

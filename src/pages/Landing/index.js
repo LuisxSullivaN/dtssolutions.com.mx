@@ -2,22 +2,19 @@ import Navbar from '../../components/Navbar'
 import Banner from '../../components/Banner'
 import Benefits from './Benefits'
 import DigitalTransformation from './DigitalTransformation'
-import CustomerSupport from './CustomerSupport'
-import Clients from './Clients'
+import OurClients from './OurClients'
 import Footer from './Footer'
 
 const LandingPage = () => {
   return (
     <>
-      <Navbar/>
-      <Banner/>
-      <Benefits/>
-      <DigitalTransformation/>
-      <CustomerSupport/>
-      <Clients/>
-      <Footer/>
+      <Navbar />
+      <Banner />
+      <Benefits />
+      <DigitalTransformation />
+      <OurClients />
+      <Footer />
     </>
   )
-
 }
 export default LandingPage

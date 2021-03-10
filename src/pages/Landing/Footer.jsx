@@ -16,6 +16,7 @@ const useStyles = makeStyles({
 
 const Footer = ({ theme }) => {
   const classes = useStyles(theme)
+
   return (
     <Container className={classes.root}>
       <Box
